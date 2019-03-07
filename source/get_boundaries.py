@@ -39,7 +39,7 @@ def spark_pipeline(file):
 
 	sc.stop()
 
-	current_time = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+	current_time = datetime.now().strftime("%m/%d/%Y %H:%M:%S")
 	return (file, current_time, lat_max, lat_min, lon_max, lon_min, time_max, time_min)
 
 
